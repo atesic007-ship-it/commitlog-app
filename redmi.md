@@ -36,19 +36,6 @@ Bez servera/baze — aplikacija je namenjena pojedinačnom korisniku na jednom u
 Bez state-management biblioteke (Redux i sl.) — postoji samo jedan izvor podataka (lista sesija), pa su React-ovi ugrađeni useState/useMemo dovoljni.
 Sve u jednom fajlu — projekat je manjeg obima, pa je jedan fajl podeljen na logičke celine (podaci, pomoćne funkcije, komponente, glavna logika) dovoljno pregledan; kod veće aplikacije bi se ovo razdvojilo u više fajlova/foldera.
 
-Struktura projekta
-commitlog-app/
-├── index.html
-├── package.json
-├── package-lock.json
-├── tsconfig.json
-├── tsconfig.node.json
-├── vite.config.ts
-├── README.md
-└── src/
-    ├── main.tsx
-    └── App.tsx        ← sva logika i dizajn
-
 Konfiguracioni fajlovi
 package.json — spisak svih paketa koje aplikacija koristi i komande za pokretanje (npm run dev, npm run build)
 package-lock.json — automatski generisan fajl koji zaključava tačne verzije instaliranih paketa
